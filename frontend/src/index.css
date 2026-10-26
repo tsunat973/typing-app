@@ -1,0 +1,50 @@
+:root {
+  /* 背景・面 */
+  --bg: #15171A;
+  --panel: #1B1E22;
+  --line: #2A2E34;
+
+  /* 文字 */
+  --text: #D4D7DD;
+  --muted: #8A919C;
+  --gutter: #5C636E;
+  --untyped: #6B727D;
+
+  /* アクセント・状態 */
+  --accent: #6CB6FF;
+  --accent-bg: #1D2B3A;
+  --miss: #F47067;
+  --miss-bg: #3A1F22;
+  --ok: #8DDB8C;
+  --string: #E0A96D;
+
+  /* フォント */
+  --font: "JetBrains Mono", "Noto Sans JP", monospace;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font);
+  font-variant-ligatures: none;
+  -webkit-font-smoothing: antialiased;
+}
+
+button,
+input {
+  font: inherit;
+  color: inherit;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
