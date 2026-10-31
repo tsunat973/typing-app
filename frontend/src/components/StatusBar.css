@@ -1,0 +1,17 @@
+.status-bar {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 4px 24px;
+  padding: 8px 16px;
+  background: var(--panel);
+  border-top: 1px solid var(--line);
+  font-size: 13px;
+  color: var(--muted);
+}
+
+.status-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
