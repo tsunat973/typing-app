@@ -6,6 +6,7 @@ export function GameProvider({ children }) {
   const [lang, setLang] = useState("react");
   const [playerName, setPlayerName] = useState("");
   const [result, setResult] = useState(null);
+  const [lastScoreId, setLastScoreId] = useState(null);
 
   const value = {
     lang,
@@ -14,6 +15,8 @@ export function GameProvider({ children }) {
     setPlayerName,
     result,
     setResult,
+    lastScoreId, 
+    setLastScoreId,
   };
 
   return <GameContext.Provider value={value}>{children}</GameContext.Provider>;

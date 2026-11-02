@@ -4,7 +4,7 @@ import "./Header.css";
 function Header() {
   return (
     <header className="header">
-      <span className="header-app">[アプリ名]</span>
+      <span className="header-app">打ち込みジム</span>
       <nav className="header-tabs">
         <NavLink to="/" end className="tab">
           top.ts
