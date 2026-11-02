@@ -1,0 +1,941 @@
+[
+  {
+    "no": 1,
+    "chapter": "演算の基礎",
+    "title": "簡単な足し算",
+    "mode": "normal",
+    "blocks": [
+      {
+        "python": "num1=100\nnum2=61"
+      },
+      {
+        "python": "result=num1+num2"
+      },
+      {
+        "python": "print(result)"
+      }
+    ]
+  },
+  {
+    "no": 1,
+    "chapter": "演算の基礎",
+    "title": "簡単な足し算",
+    "mode": "normal",
+    "blocks": [
+      {
+        "javascript": "const num1=100;\nconst num2=61;"
+      },
+      {
+        "javascript": "const result=num1+num2;"
+      },
+      {
+        "javascript": "console.log(result);"
+      }
+    ]
+  },
+  {
+    "no": 2,
+    "chapter": "演算の基礎",
+    "title": "簡単な引き算",
+    "mode": "normal",
+    "blocks": [
+      {
+        "python": "num1=240\nnum2=135"
+      },
+      {
+        "python": "result=num1-num2"
+      },
+      {
+        "python": "print(result)"
+      }
+    ]
+  },
+  {
+    "no": 2,
+    "chapter": "演算の基礎",
+    "title": "簡単な引き算",
+    "mode": "normal",
+    "blocks": [
+      {
+        "javascript": "const num1=240;\nconst num2=135;"
+      },
+      {
+        "javascript": "const result=num1-num2;"
+      },
+      {
+        "javascript": "console.log(result);"
+      }
+    ]
+  },
+  {
+    "no": 3,
+    "chapter": "演算の基礎",
+    "title": "簡単な掛け算",
+    "mode": "normal",
+    "blocks": [
+      {
+        "python": "num1=17\nnum2=31"
+      },
+      {
+        "python": "result=num1*num2"
+      },
+      {
+        "python": "print(result)"
+      }
+    ]
+  },
+  {
+    "no": 3,
+    "chapter": "演算の基礎",
+    "title": "簡単な掛け算",
+    "mode": "normal",
+    "blocks": [
+      {
+        "javascript": "const num1=17;\nconst num2=31;"
+      },
+      {
+        "javascript": "const result=num1*num2;"
+      },
+      {
+        "javascript": "console.log(result);"
+      }
+    ]
+  },
+  {
+    "no": 4,
+    "chapter": "演算の基礎",
+    "title": "簡単な割り算",
+    "mode": "normal",
+    "blocks": [
+      {
+        "python": "num1=50\nnum2=8.0"
+      },
+      {
+        "python": "result=num1/num2"
+      },
+      {
+        "python": "print(result)"
+      }
+    ]
+  },
+  {
+    "no": 4,
+    "chapter": "演算の基礎",
+    "title": "簡単な割り算",
+    "mode": "normal",
+    "blocks": [
+      {
+        "javascript": "const num1=50;\nconst num2=8.0;"
+      },
+      {
+        "javascript": "const result=num1/num2;"
+      },
+      {
+        "javascript": "console.log(result);"
+      }
+    ]
+  },
+  {
+    "no": 5,
+    "chapter": "演算の基礎",
+    "title": "割り算のあまり",
+    "mode": "normal",
+    "blocks": [
+      {
+        "python": "num1=30\nnum2=2.0"
+      },
+      {
+        "python": "result=num1%num2"
+      },
+      {
+        "python": "print(result)"
+      }
+    ]
+  },
+  {
+    "no": 5,
+    "chapter": "演算の基礎",
+    "title": "割り算のあまり",
+    "mode": "normal",
+    "blocks": [
+      {
+        "javascript": "const num1=30;\nconst num2=2.0;"
+      },
+      {
+        "javascript": "const result=num1%num2;"
+      },
+      {
+        "javascript": "console.log(result);"
+      }
+    ]
+  },
+  {
+    "no": 6,
+    "chapter": "if",
+    "title": "if入門①",
+    "mode": "normal",
+    "blocks": [
+      {
+        "python": "score=75"
+      },
+      {
+        "python": "if score>=70:\n    print(\"pass\")\nelse:\n    print(\"fail\")"
+      }
+    ]
+  },
+  {
+    "no": 6,
+    "chapter": "if",
+    "title": "if入門①",
+    "mode": "normal",
+    "blocks": [
+      {
+        "javascript": "const score=75;"
+      },
+      {
+        "javascript": "if (score>=70) {\n    console.log(\"pass\");\n} else {\n    console.log(\"fail\");\n}"
+      }
+    ]
+  },
+  {
+    "no": 7,
+    "chapter": "if",
+    "title": "if入門②",
+    "mode": "normal",
+    "blocks": [
+      {
+        "python": "n=7"
+      },
+      {
+        "python": "if n%2==0:\n    print(\"even\")\nelse:\n    print(\"odd\")"
+      }
+    ]
+  },
+  {
+    "no": 7,
+    "chapter": "if",
+    "title": "if入門②",
+    "mode": "normal",
+    "blocks": [
+      {
+        "javascript": "const n=7;"
+      },
+      {
+        "javascript": "if (n%2===0) {\n    console.log(\"even\");\n} else {\n    console.log(\"odd\");\n}"
+      }
+    ]
+  },
+  {
+    "no": 8,
+    "chapter": "if",
+    "title": "if入門③",
+    "mode": "normal",
+    "blocks": [
+      {
+        "python": "score=65"
+      },
+      {
+        "python": "if score>=80:\n    rank=\"A\"\nelif score>=60:\n    rank=\"B\"\nelse:\n    rank=\"C\""
+      },
+      {
+        "python": "print(rank)"
+      }
+    ]
+  },
+  {
+    "no": 8,
+    "chapter": "if",
+    "title": "if入門③",
+    "mode": "normal",
+    "blocks": [
+      {
+        "javascript": "const score=65;"
+      },
+      {
+        "javascript": "let rank;\nif (score>=80) {\n    rank=\"A\";\n} else if (score>=60) {\n    rank=\"B\";\n} else {\n    rank=\"C\";\n}"
+      },
+      {
+        "javascript": "console.log(rank);"
+      }
+    ]
+  },
+  {
+    "no": 9,
+    "chapter": "for",
+    "title": "for入門①",
+    "mode": "normal",
+    "blocks": [
+      {
+        "python": "total=0"
+      },
+      {
+        "python": "for i in range(1,11):\n    total +=i"
+      },
+      {
+        "python": "print(total)"
+      }
+    ]
+  },
+  {
+    "no": 9,
+    "chapter": "for",
+    "title": "for入門①",
+    "mode": "normal",
+    "blocks": [
+      {
+        "javascript": "let total=0;"
+      },
+      {
+        "javascript": "for (let i=1; i<=10; i++) {\n    total +=i;\n}"
+      },
+      {
+        "javascript": "console.log(total);"
+      }
+    ]
+  },
+  {
+    "no": 10,
+    "chapter": "for",
+    "title": "for入門②",
+    "mode": "normal",
+    "blocks": [
+      {
+        "python": "scores =[80,70,90]\ntotal=0"
+      },
+      {
+        "python": "for s in scores:\n    total+=s"
+      },
+      {
+        "python": "print(total/len(scores))"
+      }
+    ]
+  },
+  {
+    "no": 10,
+    "chapter": "for",
+    "title": "for入門②",
+    "mode": "normal",
+    "blocks": [
+      {
+        "javascript": "const scores =[80,70,90];\nlet total=0;"
+      },
+      {
+        "javascript": "for (const s of scores) {\n    total+=s;\n}"
+      },
+      {
+        "javascript": "console.log(total/scores.length);"
+      }
+    ]
+  },
+  {
+    "no": 11,
+    "chapter": "for",
+    "title": "for入門③ フィボナッチ数列",
+    "mode": "normal",
+    "blocks": [
+      {
+        "python": "a=0\nb=1"
+      },
+      {
+        "python": "for i in range(10):\n    print(a)\n    a,b=b,a+b"
+      }
+    ]
+  },
+  {
+    "no": 11,
+    "chapter": "for",
+    "title": "for入門③ フィボナッチ数列",
+    "mode": "normal",
+    "blocks": [
+      {
+        "javascript": "let a=0;\nlet b=1;"
+      },
+      {
+        "javascript": "for (let i=0; i<10; i++) {\n    console.log(a);\n    [a,b]=[b,a+b];\n}"
+      }
+    ]
+  },
+  {
+    "no": 12,
+    "chapter": "文字列",
+    "title": "文字列入門① 文字列をつなげる",
+    "mode": "normal",
+    "blocks": [
+      {
+        "python": "name=\"Taro\""
+      },
+      {
+        "python": "message=\"Hello, \"+name+\"!\""
+      },
+      {
+        "python": "print(message)"
+      }
+    ]
+  },
+  {
+    "no": 12,
+    "chapter": "文字列",
+    "title": "文字列入門① 文字列をつなげる",
+    "mode": "normal",
+    "blocks": [
+      {
+        "javascript": "const name=\"Taro\";"
+      },
+      {
+        "javascript": "const message=\"Hello, \"+name+\"!\";"
+      },
+      {
+        "javascript": "console.log(message);"
+      }
+    ]
+  },
+  {
+    "no": 13,
+    "chapter": "文字列",
+    "title": "文字列入門② 文字数を数える",
+    "mode": "normal",
+    "blocks": [
+      {
+        "python": "word=\"programming\""
+      },
+      {
+        "python": "length=len(word)"
+      },
+      {
+        "python": "print(length)"
+      }
+    ]
+  },
+  {
+    "no": 13,
+    "chapter": "文字列",
+    "title": "文字列入門② 文字数を数える",
+    "mode": "normal",
+    "blocks": [
+      {
+        "javascript": "const word=\"programming\";"
+      },
+      {
+        "javascript": "const length=word.length;"
+      },
+      {
+        "javascript": "console.log(length);"
+      }
+    ]
+  },
+  {
+    "no": 14,
+    "chapter": "文字列",
+    "title": "文字列入門③ 大文字にする",
+    "mode": "normal",
+    "blocks": [
+      {
+        "python": "word=\"python\""
+      },
+      {
+        "python": "upper=word.upper()"
+      },
+      {
+        "python": "print(upper)"
+      }
+    ]
+  },
+  {
+    "no": 14,
+    "chapter": "文字列",
+    "title": "文字列入門③ 大文字にする",
+    "mode": "normal",
+    "blocks": [
+      {
+        "javascript": "const word=\"python\";"
+      },
+      {
+        "javascript": "const upper=word.toUpperCase();"
+      },
+      {
+        "javascript": "console.log(upper);"
+      }
+    ]
+  },
+  {
+    "no": 15,
+    "chapter": "リスト",
+    "title": "リスト入門① 要素を追加する",
+    "mode": "normal",
+    "blocks": [
+      {
+        "python": "fruits=[\"apple\",\"banana\"]"
+      },
+      {
+        "python": "fruits.append(\"melon\")"
+      },
+      {
+        "python": "print(fruits)"
+      }
+    ]
+  },
+  {
+    "no": 15,
+    "chapter": "リスト",
+    "title": "リスト入門① 要素を追加する",
+    "mode": "normal",
+    "blocks": [
+      {
+        "javascript": "const fruits=[\"apple\",\"banana\"];"
+      },
+      {
+        "javascript": "fruits.push(\"melon\");"
+      },
+      {
+        "javascript": "console.log(fruits);"
+      }
+    ]
+  },
+  {
+    "no": 16,
+    "chapter": "リスト",
+    "title": "リスト入門② 最初と最後の要素",
+    "mode": "normal",
+    "blocks": [
+      {
+        "python": "nums=[4,8,15,16,23]"
+      },
+      {
+        "python": "first=nums[0]\nlast=nums[len(nums)-1]"
+      },
+      {
+        "python": "print(first,last)"
+      }
+    ]
+  },
+  {
+    "no": 16,
+    "chapter": "リスト",
+    "title": "リスト入門② 最初と最後の要素",
+    "mode": "normal",
+    "blocks": [
+      {
+        "javascript": "const nums=[4,8,15,16,23];"
+      },
+      {
+        "javascript": "const first=nums[0];\nconst last=nums[nums.length-1];"
+      },
+      {
+        "javascript": "console.log(first,last);"
+      }
+    ]
+  },
+  {
+    "no": 17,
+    "chapter": "while",
+    "title": "while入門① カウントダウン",
+    "mode": "normal",
+    "blocks": [
+      {
+        "python": "count=5"
+      },
+      {
+        "python": "while count>0:\n    print(count)\n    count-=1"
+      },
+      {
+        "python": "print(\"start!\")"
+      }
+    ]
+  },
+  {
+    "no": 17,
+    "chapter": "while",
+    "title": "while入門① カウントダウン",
+    "mode": "normal",
+    "blocks": [
+      {
+        "javascript": "let count=5;"
+      },
+      {
+        "javascript": "while (count>0) {\n    console.log(count);\n    count-=1;\n}"
+      },
+      {
+        "javascript": "console.log(\"start!\");"
+      }
+    ]
+  },
+  {
+    "no": 18,
+    "chapter": "while",
+    "title": "while入門② 1000円たまるまで",
+    "mode": "normal",
+    "blocks": [
+      {
+        "python": "money=0\nday=0"
+      },
+      {
+        "python": "while money<1000:\n    money+=150\n    day+=1"
+      },
+      {
+        "python": "print(day)"
+      }
+    ]
+  },
+  {
+    "no": 18,
+    "chapter": "while",
+    "title": "while入門② 1000円たまるまで",
+    "mode": "normal",
+    "blocks": [
+      {
+        "javascript": "let money=0;\nlet day=0;"
+      },
+      {
+        "javascript": "while (money<1000) {\n    money+=150;\n    day+=1;\n}"
+      },
+      {
+        "javascript": "console.log(day);"
+      }
+    ]
+  },
+  {
+    "no": 19,
+    "chapter": "関数",
+    "title": "関数入門① 足し算の関数",
+    "mode": "normal",
+    "blocks": [
+      {
+        "python": "def add(a,b):\n    return a+b"
+      },
+      {
+        "python": "result=add(3,5)"
+      },
+      {
+        "python": "print(result)"
+      }
+    ]
+  },
+  {
+    "no": 19,
+    "chapter": "関数",
+    "title": "関数入門① 足し算の関数",
+    "mode": "normal",
+    "blocks": [
+      {
+        "javascript": "function add(a,b) {\n    return a+b;\n}"
+      },
+      {
+        "javascript": "const result=add(3,5);"
+      },
+      {
+        "javascript": "console.log(result);"
+      }
+    ]
+  },
+  {
+    "no": 20,
+    "chapter": "関数",
+    "title": "関数入門② 偶数かどうかを返す関数",
+    "mode": "normal",
+    "blocks": [
+      {
+        "python": "def is_even(n):\n    return n%2==0"
+      },
+      {
+        "python": "result=is_even(10)"
+      },
+      {
+        "python": "print(result)"
+      }
+    ]
+  },
+  {
+    "no": 20,
+    "chapter": "関数",
+    "title": "関数入門② 偶数かどうかを返す関数",
+    "mode": "normal",
+    "blocks": [
+      {
+        "javascript": "function is_even(n) {\n    return n%2===0;\n}"
+      },
+      {
+        "javascript": "const result=is_even(10);"
+      },
+      {
+        "javascript": "console.log(result);"
+      }
+    ]
+  },
+  {
+    "no": 1,
+    "chapter": "JSXの基本",
+    "title": "JSX入門① 見出しを表示する",
+    "mode": "normal",
+    "blocks": [
+      {
+        "react": "function Title() {\n    return <h1>Hello, React!</h1>;\n}"
+      }
+    ]
+  },
+  {
+    "no": 2,
+    "chapter": "JSXの基本",
+    "title": "JSX入門② 変数を埋め込む",
+    "mode": "normal",
+    "blocks": [
+      {
+        "react": "function Greeting() {\n    const name=\"Taro\";"
+      },
+      {
+        "react": "    return <p>Hello, {name}!</p>;\n}"
+      }
+    ]
+  },
+  {
+    "no": 3,
+    "chapter": "JSXの基本",
+    "title": "JSX入門③ 計算結果を表示する",
+    "mode": "normal",
+    "blocks": [
+      {
+        "react": "function Price() {\n    const price=1200;"
+      },
+      {
+        "react": "    const tax=price*10/100;"
+      },
+      {
+        "react": "    return <p>{price+tax} yen</p>;\n}"
+      }
+    ]
+  },
+  {
+    "no": 4,
+    "chapter": "JSXの基本",
+    "title": "JSX入門④ 複数の要素をまとめる",
+    "mode": "normal",
+    "blocks": [
+      {
+        "react": "function Profile() {\n    return (\n        <div>\n            <h2>Taro</h2>\n            <p>age: 20</p>\n        </div>\n    );\n}"
+      }
+    ]
+  },
+  {
+    "no": 5,
+    "chapter": "props",
+    "title": "props入門① 値を受け取る",
+    "mode": "normal",
+    "blocks": [
+      {
+        "react": "function Hello({name}) {\n    return <p>Hello, {name}!</p>;\n}"
+      }
+    ]
+  },
+  {
+    "no": 6,
+    "chapter": "props",
+    "title": "props入門② 受け取った値で計算する",
+    "mode": "normal",
+    "blocks": [
+      {
+        "react": "function Total({price,count}) {\n    const total=price*count;"
+      },
+      {
+        "react": "    return <p>total: {total}</p>;\n}"
+      }
+    ]
+  },
+  {
+    "no": 7,
+    "chapter": "props",
+    "title": "props入門③ 部品に値を渡す",
+    "mode": "normal",
+    "blocks": [
+      {
+        "react": "function Hello({name}) {\n    return <p>Hello, {name}!</p>;\n}"
+      },
+      {
+        "react": "function App() {\n    return <Hello name=\"Taro\" />;\n}"
+      }
+    ]
+  },
+  {
+    "no": 8,
+    "chapter": "useState",
+    "title": "useState入門① カウンター",
+    "mode": "normal",
+    "blocks": [
+      {
+        "react": "function Counter() {\n    const [count,setCount]=useState(0);"
+      },
+      {
+        "react": "    return <button onClick={()=>setCount(count+1)}>{count}</button>;\n}"
+      }
+    ]
+  },
+  {
+    "no": 9,
+    "chapter": "useState",
+    "title": "useState入門② 増やす・減らす",
+    "mode": "normal",
+    "blocks": [
+      {
+        "react": "function Counter() {\n    const [count,setCount]=useState(0);"
+      },
+      {
+        "react": "    return (\n        <div>\n            <button onClick={()=>setCount(count-1)}>-</button>\n            <span>{count}</span>\n            <button onClick={()=>setCount(count+1)}>+</button>\n        </div>\n    );\n}"
+      }
+    ]
+  },
+  {
+    "no": 10,
+    "chapter": "useState",
+    "title": "useState入門③ 表示を切り替える",
+    "mode": "normal",
+    "blocks": [
+      {
+        "react": "function Toggle() {\n    const [show,setShow]=useState(true);"
+      },
+      {
+        "react": "    return (\n        <div>\n            <button onClick={()=>setShow(!show)}>toggle</button>\n            {show && <p>Hello!</p>}\n        </div>\n    );\n}"
+      }
+    ]
+  },
+  {
+    "no": 11,
+    "chapter": "イベント",
+    "title": "イベント入門① クリックで関数を呼ぶ",
+    "mode": "normal",
+    "blocks": [
+      {
+        "react": "function ClickButton() {\n    function handleClick() {\n        console.log(\"clicked\");\n    }"
+      },
+      {
+        "react": "    return <button onClick={handleClick}>click</button>;\n}"
+      }
+    ]
+  },
+  {
+    "no": 12,
+    "chapter": "イベント",
+    "title": "イベント入門② 入力した文字を表示する",
+    "mode": "normal",
+    "blocks": [
+      {
+        "react": "function Echo() {\n    const [text,setText]=useState(\"\");"
+      },
+      {
+        "react": "    return (\n        <div>\n            <input value={text} onChange={(e)=>setText(e.target.value)} />\n            <p>{text}</p>\n        </div>\n    );\n}"
+      }
+    ]
+  },
+  {
+    "no": 13,
+    "chapter": "イベント",
+    "title": "イベント入門③ 入力した文字数を数える",
+    "mode": "normal",
+    "blocks": [
+      {
+        "react": "function CharCount() {\n    const [text,setText]=useState(\"\");"
+      },
+      {
+        "react": "    return (\n        <div>\n            <input value={text} onChange={(e)=>setText(e.target.value)} />\n            <p>{text.length} characters</p>\n        </div>\n    );\n}"
+      }
+    ]
+  },
+  {
+    "no": 14,
+    "chapter": "条件で表示を変える",
+    "title": "条件入門① 三項演算子",
+    "mode": "normal",
+    "blocks": [
+      {
+        "react": "function Result() {\n    const score=75;"
+      },
+      {
+        "react": "    return <p>{score>=70 ? \"pass\" : \"fail\"}</p>;\n}"
+      }
+    ]
+  },
+  {
+    "no": 15,
+    "chapter": "条件で表示を変える",
+    "title": "条件入門② ifで返す内容を変える",
+    "mode": "normal",
+    "blocks": [
+      {
+        "react": "function Status({online}) {\n    if (online) {\n        return <p>online</p>;\n    }\n    return <p>offline</p>;\n}"
+      }
+    ]
+  },
+  {
+    "no": 16,
+    "chapter": "条件で表示を変える",
+    "title": "条件入門③ &&で表示する",
+    "mode": "normal",
+    "blocks": [
+      {
+        "react": "function Notice() {\n    const count=3;"
+      },
+      {
+        "react": "    return <div>{count>0 && <p>{count} new messages</p>}</div>;\n}"
+      }
+    ]
+  },
+  {
+    "no": 17,
+    "chapter": "リストを表示する",
+    "title": "リスト入門① mapで表示する",
+    "mode": "normal",
+    "blocks": [
+      {
+        "react": "function FruitList() {\n    const fruits=[\"apple\",\"banana\",\"melon\"];"
+      },
+      {
+        "react": "    return <ul>{fruits.map((f)=><li key={f}>{f}</li>)}</ul>;\n}"
+      }
+    ]
+  },
+  {
+    "no": 18,
+    "chapter": "リストを表示する",
+    "title": "リスト入門② オブジェクトの配列を表示する",
+    "mode": "normal",
+    "blocks": [
+      {
+        "react": "function UserList() {\n    const users=[{id:1,name:\"sato\"},{id:2,name:\"suzuki\"}];"
+      },
+      {
+        "react": "    return <ul>{users.map((u)=><li key={u.id}>{u.name}</li>)}</ul>;\n}"
+      }
+    ]
+  },
+  {
+    "no": 19,
+    "chapter": "リストを表示する",
+    "title": "リスト入門③ filterで絞り込む",
+    "mode": "normal",
+    "blocks": [
+      {
+        "react": "function Passed() {\n    const scores=[55,80,62,40,91];"
+      },
+      {
+        "react": "    const passed=scores.filter((s)=>s>=60);"
+      },
+      {
+        "react": "    return <p>{passed.length} passed</p>;\n}"
+      }
+    ]
+  },
+  {
+    "no": 20,
+    "chapter": "useEffect",
+    "title": "useEffect入門 タイトルを変える",
+    "mode": "normal",
+    "blocks": [
+      {
+        "react": "function TitleCounter() {\n    const [count,setCount]=useState(0);"
+      },
+      {
+        "react": "    useEffect(()=>{\n        document.title=\"count: \"+count;\n    },[count]);"
+      },
+      {
+        "react": "    return <button onClick={()=>setCount(count+1)}>{count}</button>;\n}"
+      }
+    ]
+  }
+]
