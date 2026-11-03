@@ -20,8 +20,25 @@ function ResultPage() {
   const [status, setStatus] = useState("idle"); // idle → sending → done / error
   const [message, setMessage] = useState("");
 
-  // フックを全部呼んだあとで、result がなければトップへ
-  if (!result) return <Navigate to="/" replace />;
+  // 結果がまだないとき（1回もプレイしていない、再読み込みしたなど）
+if (!result) {
+  return (
+    <div className="page">
+      <div className="page-body result">
+        <p className="result-muted">$ cat result.log</p>
+        <p className="result-muted">
+          // まだ結果がありません。1回プレイすると、ここに表示されます
+        </p>
+        <nav className="result-links">
+          <Link to="/">&gt; プレイする</Link>
+          <Link to="/ranking">&gt; ランキング</Link>
+        </nav>
+      </div>
+      <StatusBar left="result.log" right="結果なし" />
+    </div>
+  );
+}
+  
 
   async function handleRegister(e) {
     e.preventDefault();
