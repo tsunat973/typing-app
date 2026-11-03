@@ -1,0 +1,15 @@
+# 環境変数（DATABASE_URL などの秘密情報）
+# .env.example はコミットするので除外しない
+.env
+
+# ローカル開発用のSQLite
+dev.db
+
+# Python
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.ruff_cache/
+
+CLAUDE.md
