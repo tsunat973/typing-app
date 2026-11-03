@@ -1,0 +1,48 @@
+.code {
+  min-height: calc(52px * 10); /* 最大10行分の高さを確保 */
+  font-size: 22px;
+}
+
+.code-line {
+  display: flex;
+  align-items: center;
+  min-height: 52px;
+}
+
+.code-line.current {
+  background: var(--panel);
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+
+.code-gutter {
+  flex-shrink: 0;
+  width: 72px;
+  padding-right: 28px;
+  text-align: right;
+  font-size: 15px;
+  color: var(--gutter);
+}
+
+.code-line.current .code-gutter {
+  color: var(--text);
+}
+
+.code-text {
+  white-space: pre; /* スペースを詰めずにそのまま表示 */
+}
+
+.typed   { color: var(--text); }
+.untyped { color: var(--untyped); }
+
+.cursor {
+  color: var(--text);
+  box-shadow: inset 2px 0 0 var(--accent); /* 文字の左に青い縦線 */
+}
+
+.cursor.miss {
+  color: var(--miss);
+  background: var(--miss-bg);
+  text-decoration: underline;
+  text-underline-offset: 6px;
+}
