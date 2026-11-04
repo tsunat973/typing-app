@@ -1,5 +1,6 @@
 import StatusBar from "../components/StatusBar";
 import { useGame } from "../context/GameContext";
+import { useNavigate } from "react-router-dom"
 
 function isValidName(playerName) {
   const trimmedPlayerName = playerName.trim();
@@ -9,6 +10,7 @@ function isValidName(playerName) {
 function TopPage() {
   const { lang, setLang, playerName, setPlayerName } = useGame();
   const nameOk = isValidName(playerName);
+  const navigate=useNavigate();
 
   return (
     <div className="page">
@@ -21,6 +23,7 @@ function TopPage() {
         <p>名前:</p>
         <input value={playerName} onChange={(e) => setPlayerName(e.target.value)} />
         {!nameOk && <p>名前は1〜20文字で入力してください</p>}
+        <button disabled={!nameOk} onClick={()=>navigate("/typing")}>スタート</button>
       </div>
       <StatusBar left={"lang: " + lang} right="時間制限なし" />
     </div>
