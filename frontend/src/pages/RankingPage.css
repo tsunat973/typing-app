@@ -1,0 +1,42 @@
+.ranking {
+  padding: 40px 48px;
+  font-size: 16px;
+}
+.ranking-comment {
+  margin: 0 0 24px;
+  color: var(--muted);
+  font-style: italic;
+}
+.ranking-error { color: var(--miss); }
+.ranking-scroll {
+  overflow-x: auto;
+  margin-bottom: 32px;
+}
+.ranking-table {
+  width: 100%;
+  max-width: 900px;
+  min-width: 560px;
+  border-collapse: collapse;
+}
+.ranking-table th {
+  padding: 8px 12px;
+  text-align: left;
+  font-weight: 400;
+  color: var(--muted);
+  border-bottom: 1px dashed var(--gutter);
+}
+.ranking-table td {
+  padding: 10px 12px;
+  border-bottom: 1px solid var(--line);
+}
+.ranking-table .num { text-align: right; }
+.ranking-rank { color: var(--muted); }
+.ranking-wpm { font-weight: 700; }
+.ranking-sub { color: var(--muted); }
+
+/* 直前に登録した自分の記録 */
+.ranking-me {
+  background: var(--accent-bg);
+  box-shadow: inset 3px 0 0 var(--accent);
+}
+.ranking-me .ranking-rank { color: var(--accent); }
