@@ -5,19 +5,7 @@ import CodeLine from "../components/CodeLine";
 import { useGame } from "../context/GameContext";
 import { useTyping } from "../hooks/useTyping";
 import { calcWpm, calcAccuracy } from "../utils/calcStats";
-
-const MOCK_PROBLEMS = [
-  {
-    id: 1,
-    blocks: [
-      {
-        lang: "python",
-        code: "nums = [1, 2, 3]\nfor n in nums:\n    print(n)",
-      },
-    ],
-  },
-  { id: 2, blocks: [{ lang: "python", code: "total = sum(nums)" }] },
-];
+import { fetchProblems } from "../api/client";
 
 // ミリ秒を「mm:ss」の文字列に変換する（例：42000 → "00:42"）
 function formatTime(ms) {
@@ -27,8 +15,8 @@ function formatTime(ms) {
   return `${m}:${s}`;
 }
 
-function TypingPage() {
-  const t = useTyping(MOCK_PROBLEMS);
+function TypingGame({problems}) {
+  const t = useTyping(problems);
   const navigate = useNavigate();
   const { setResult } = useGame();
   const [now, setNow] = useState(() => Date.now());
@@ -80,6 +68,26 @@ function TypingPage() {
       />
     </div>
   );
+}
+
+// お題を読み込んでから TypingGame を表示する
+function TypingPage() {
+  const { lang } = useGame();
+  const [problems, setProblems] = useState(null);
+  const [error, setError] = useState("");
+
+  useEffect(() => {
+    let ignore = false;
+    fetchProblems("normal", lang)
+      .then((data) => { if (!ignore) setProblems(data); })
+      .catch((e) => { if (!ignore) setError(e.message); });
+    return () => { ignore = true; };
+  }, [lang]);
+
+  if (error) return <p className="page-body">{error}</p>;
+  if (!problems) return <p className="page-body">// お題を読み込み中...（初回は最大1分かかります）</p>;
+  if (problems.length === 0) return <p className="page-body">// お題がありません</p>;
+  return <TypingGame problems={problems} />;
 }
 
 export default TypingPage;

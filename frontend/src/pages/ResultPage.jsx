@@ -1,13 +1,9 @@
 import { useState } from "react";
-import { Link, Navigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 import StatusBar from "../components/StatusBar";
 import { useGame } from "../context/GameContext";
+import { postScore } from "../api/client";
 import "./ResultPage.css";
-
-// TODO（11/3の結合で差し替え）：import { postScore } from "../api/client";
-async function postScore() {
-  return { id: 15, created_at: "2026-11-02T12:00:00Z" };
-}
 
 function formatTime(ms) {
   const sec = Math.floor(ms / 1000);
@@ -21,24 +17,23 @@ function ResultPage() {
   const [message, setMessage] = useState("");
 
   // 結果がまだないとき（1回もプレイしていない、再読み込みしたなど）
-if (!result) {
-  return (
-    <div className="page">
-      <div className="page-body result">
-        <p className="result-muted">$ cat result.log</p>
-        <p className="result-muted">
-          // まだ結果がありません。1回プレイすると、ここに表示されます
-        </p>
-        <nav className="result-links">
-          <Link to="/">&gt; プレイする</Link>
-          <Link to="/ranking">&gt; ランキング</Link>
-        </nav>
+  if (!result) {
+    return (
+      <div className="page">
+        <div className="page-body result">
+          <p className="result-muted">$ cat result.log</p>
+          <p className="result-muted">
+            // まだ結果がありません。1回プレイすると、ここに表示されます
+          </p>
+          <nav className="result-links">
+            <Link to="/">&gt; プレイする</Link>
+            <Link to="/ranking">&gt; ランキング</Link>
+          </nav>
+        </div>
+        <StatusBar left="result.log" right="結果なし" />
       </div>
-      <StatusBar left="result.log" right="結果なし" />
-    </div>
-  );
-}
-  
+    );
+  }
 
   async function handleRegister(e) {
     e.preventDefault();
@@ -62,9 +57,9 @@ if (!result) {
       setPlayerName(trimmed);
       setStatus("done");
       setMessage("ランキングに登録しました"); // I001
-    } catch {
+    } catch (err) {
       setStatus("error");
-      setMessage("通信に失敗しました。接続を確認してください"); // E005
+      setMessage(err.message); // E005
     }
   }
 
@@ -106,7 +101,13 @@ if (!result) {
           </button>
         </form>
         {message && (
-          <p className={status === "error" || status === "idle" ? "result-miss" : "result-ok"}>
+          <p
+            className={
+              status === "error" || status === "idle"
+                ? "result-miss"
+                : "result-ok"
+            }
+          >
             {message}
           </p>
         )}
@@ -117,7 +118,10 @@ if (!result) {
           <Link to="/">&gt; トップ</Link>
         </nav>
       </div>
-      <StatusBar left={lang} right={status === "done" ? "ランキング登録済み" : "ランキング未登録"} />
+      <StatusBar
+        left={lang}
+        right={status === "done" ? "ランキング登録済み" : "ランキング未登録"}
+      />
     </div>
   );
 }
