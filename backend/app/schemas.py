@@ -8,6 +8,11 @@ from pydantic import BaseModel, ConfigDict, Field
 Lang = Literal["react", "python"]
 Mode = Literal["normal", "mixed"]
 
+# スコアの上限。DB の int4（約21億）を超える値で保存に失敗する（500 になる）のを防ぐ。
+# 人間が打てる範囲より十分大きく、通常のプレイでは超えない値にしている
+MAX_WPM = 1000
+MAX_MISS_COUNT = 100000
+
 
 # --- API-02 POST /api/scores ---
 
