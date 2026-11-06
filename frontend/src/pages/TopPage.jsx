@@ -26,7 +26,7 @@ function TopPage() {
       <form className="page-body editor" onSubmit={handleStart}>
         <div className="editor-line">
           <span className="editor-gutter">1</span>
-          <span className="editor-comment">// [アプリ名]</span>
+          <span className="editor-comment">// 打ち込みジム</span>
         </div>
         <div className="editor-line">
           <span className="editor-gutter">2</span>
