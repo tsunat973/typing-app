@@ -24,9 +24,9 @@ class ScoreCreate(BaseModel):
     name: str = Field(min_length=1, max_length=20)
     mode: Mode = "normal"
     lang: Lang
-    wpm: int = Field(ge=0)  # ge=0 は「0以上」
+    wpm: int = Field(ge=0, le=MAX_WPM)  # ge=0 は「0以上」、le は「以下」
     accuracy: float = Field(ge=0, le=100)  # le=100 は「100以下」
-    miss_count: int = Field(ge=0)
+    miss_count: int = Field(ge=0, le=MAX_MISS_COUNT)
 
 
 # 保存したあとに返す値
