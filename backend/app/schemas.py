@@ -8,6 +8,11 @@ from pydantic import BaseModel, ConfigDict, Field
 Lang = Literal["react", "python"]
 Mode = Literal["normal", "mixed"]
 
+# スコアの上限。DB の int4（約21億）を超える値で保存に失敗する（500 になる）のを防ぐ。
+# 人間が打てる範囲より十分大きく、通常のプレイでは超えない値にしている
+MAX_WPM = 1000
+MAX_MISS_COUNT = 100000
+
 
 # --- API-02 POST /api/scores ---
 
@@ -19,9 +24,9 @@ class ScoreCreate(BaseModel):
     name: str = Field(min_length=1, max_length=20)
     mode: Mode = "normal"
     lang: Lang
-    wpm: int = Field(ge=0)  # ge=0 は「0以上」
+    wpm: int = Field(ge=0, le=MAX_WPM)  # ge=0 は「0以上」、le は「以下」
     accuracy: float = Field(ge=0, le=100)  # le=100 は「100以下」
-    miss_count: int = Field(ge=0)
+    miss_count: int = Field(ge=0, le=MAX_MISS_COUNT)
 
 
 # 保存したあとに返す値
