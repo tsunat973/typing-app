@@ -50,7 +50,7 @@ class ScoreService:
         stmt = (
             select(Score)
             .where(Score.mode == "normal")
-            .order_by(Score.wpm.desc(), Score.created_at.asc())
+            .order_by(Score.wpm.desc(), Score.accuracy.desc(), Score.created_at.asc())
             .limit(RANKING_LIMIT)
         )
         scores = self.db.scalars(stmt)
