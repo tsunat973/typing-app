@@ -44,7 +44,8 @@ class ScoreService:
         self.db.refresh(score)  # DB が決めた id と created_at を読み直す
         return score
 
-    # 通常モードのランキング: WPM が高い順、同点は登録が早い順に上位10件
+    # 通常モードのランキング: WPM が高い順。WPM が同点なら正確率が高い順、
+    # それも同点なら登録が早い順で、上位10件
     def get_ranking(self) -> list[RankingItem]:
         stmt = (
             select(Score)
