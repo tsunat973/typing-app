@@ -2,7 +2,7 @@
 
 **記号もインデントも、時間制限なしで練習できる、プログラミング初学者向けのタイピングアプリ**です。
 
-- 本番: https://<本番のURL>.vercel.app
+- 本番: https://typing-app-kappa.vercel.app/
 - API: https://typing-app-d9q0.onrender.com （初回アクセス時は、サーバーの起動に1分ほどかかります）
 
 サポーターズのハッカソン（2026年11月）で、3人のチームで開発しました。
